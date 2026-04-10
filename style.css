@@ -1,3 +1,4 @@
+/* RESETARE ȘI BAZĂ */
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +39,7 @@ nav a.active {
   color: #4da6ff;
 }
 
-/* HERO */
+/* HERO (PAGINA PRINCIPALĂ) */
 .hero {
   background: url('sleep-bg.jpg') center/cover no-repeat;
   height: 70vh;
@@ -78,7 +79,7 @@ nav a.active {
   background: #1a8cff;
 }
 
-/* SUB-HERO */
+/* SUB-HERO (PAGINI SECUNDARE) */
 .sub-hero {
   background: #003366;
   color: white;
@@ -90,7 +91,7 @@ nav a.active {
   font-size: 2.5rem;
 }
 
-/* SECTIONS */
+/* SECȚIUNI ȘI CONȚINUT */
 section {
   padding: 50px 20px;
   max-width: 900px;
@@ -117,64 +118,54 @@ p, li {
   font-size: 1.1rem;
 }
 
-/* ICON CARDS */
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 50px 20px;
-}
-
-.icon-box {
-  background: white;
-  padding: 25px;
-  border-radius: 10px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.icon-box i {
-  font-size: 3rem;
-  color: #4da6ff;
-  margin-bottom: 15px;
-}
-
-.icon-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* CONTACT FORM */
+/* FORMULAR DE CONTACT (ACTUALIZAT) */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .contact-form input,
 .contact-form textarea {
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #4da6ff;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical; /* Previne stricarea designului pe orizontală */
 }
 
 .contact-form button {
-  padding: 12px;
+  padding: 15px;
   background: #003366;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .contact-form button:hover {
   background: #00509e;
+  transform: translateY(-2px);
 }
 
 /* FOOTER */
@@ -188,17 +179,17 @@ footer {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .icons {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .hero h1 {
     font-size: 2.2rem;
   }
 
   nav ul {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 15px;
   }
 }
