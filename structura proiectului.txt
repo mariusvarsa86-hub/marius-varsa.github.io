@@ -1,0 +1,9 @@
+somn-odihnitor/
+│
+├── index.html
+├── apnee.html
+├── somn.html
+├── tratament.html
+├── contact.html
+├── style.css
+└── sleep-bg.jpg   (imagine de fundal – poți folosi orice poză cu temă de somn)
